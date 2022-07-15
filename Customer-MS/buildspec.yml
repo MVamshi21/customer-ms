@@ -30,7 +30,7 @@ phases:
       - echo Pushing the Docker image...
       - docker push 860061945305.dkr.ecr.us-east-2.amazonaws.com/c10_pod-3-customer-ms:latest
       - echo Writing definitions file
-      - printf '[{"name":"customer-ms-container","imageUri":"%s"}]' 860061945305.dkr.ecr.us-east-2.amazonaws.com/c10_pod-3-customer-ms:latest > taskdefinition.json
+      - printf '[{"name":"customer-ms","imageUri":"%s"}]' 860061945305.dkr.ecr.us-east-2.amazonaws.com/c10_pod-3-customer-ms:latest > taskdefinition.json
       - cat taskdefinition.json
         
 artifacts:
